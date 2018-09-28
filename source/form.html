@@ -14,20 +14,98 @@
       <button class="main-nav__toggle" type="button">Открыть меню</button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-            <a>Главная</a>
+          <li class="site-list__item">
+            <a href="index.html">Главная</a>
           </li>
-          <li class="site-list__item site-list__item--active">
+
           <li class="site-list__item">
             <a href="">Каталог продуции</a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--active">
             <a href="">Подбор программы</a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
-
+  <main class="page-name">
+    <h1 class="page-name__title">Подбор программы</h1>
+    <form class="form" action="https://echo.htmlacademy.ru" method="get">
+      <div class="form__wrapper-pet">
+        <h3 class="visually-hidden">Данные питомца</h3>
+        <p class="form__info">
+          Заполните анкету и мы подберем
+          программу питания для вашего кота
+        </p>
+        <label class="form__name">
+          Имя:<sup>*</sup>
+          <input type="text" name="name" class="form__input-name" placeholder="Барсик">
+        </label>
+        <label class="form__weight">
+          Вес (кг):<sup>*</sup>
+          <input type="text" name="weight" class="form__input-weight" placeholder="7">
+        </label>
+        <label class="form__age">
+          Возраст (лет):
+          <input type="text" name="age" class="form__input-age" placeholder="7">
+        </label>
+      </div>
+      <div class="form__wrapper-target">
+        <h3 class="visually-hidden">Цель функционального питания</h3>
+        <label class="form__chioce-target">
+          Похудение
+          <input type="radio" class="form__radio" name="target" value="Похудение" checked>
+        </label>
+        <label class="form__chioce-target">
+          Набор массы
+          <input type="radio" class="form__radio" name="target" value="Набор массы">
+        </label>
+        <label class="form__chioce-target">
+          Не знаю (Нужен ваш совет)
+          <input type="radio" class="form__radio" name="target" value="Не знаю (Нужен ваш совет)">
+        </label>
+      </div>
+      <div class="form__wrapper-owner">
+        <h3 class="form__section-title">Контактные данные(владельца кота)</h3>
+        <label class="form__email">
+          E-mail:<sup>*</sup>
+          <input type="email" class="form__email-owner" name="email" placeholder="kuklachev@gmail.com">
+        </label>
+        <label class="form__phone">
+          Похудение
+          <input type="tel" class="form__phone-owner" name="phone" placeholder="8 (960) 900-60-90">
+        </label>
+      </div>
+      <div class="form__comment">
+        <h3 class="form__section-title">Комментарий</h3>
+        <textarea class="form__comment-text">
+          Расскажите обо всех повадках кота
+        </textarea>
+      </div>
+      <div class="form__additionally">
+        <label class="form__additionally-option">
+          Сахарозаменитель
+          <input type="checkbox" class="form__checkbox" name="sweetener" checked>
+        </label>
+        <label class="form__additionally-option">
+          Питьевая вода
+          <input type="checkbox" class="form__checkbox" name="water">
+        </label>
+        <label class="form__additionally-option">
+          Молоко
+          <input type="checkbox" class="form__checkbox" name="milk">
+        </label>
+        <label class="form__additionally-option">
+          Витамины
+          <input type="checkbox" class="form__checkbox" name="vitamins">
+        </label>
+      </div>
+      <button type="submit" class="button form__button">Отправить заявку</button>
+      <small class="form__legend form__legend--bottom">
+        <sup>*</sup> — Обязательные поля
+      </small>
+    </form>
+  </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <a class="page-footer__logo">
@@ -60,6 +138,5 @@
       </div>
     </div>
   </footer>
-</main>
 </body>
 </html>
