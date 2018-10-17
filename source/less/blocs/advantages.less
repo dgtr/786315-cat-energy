@@ -22,5 +22,28 @@
 
 .advantages__item {
   margin: 0;
-  padding: 20px, 0, 0, 0;
+  padding: 20px 0 0 0;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .advantages__item {
+    width: 40%;
+    padding-right: 10%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages__list {
+    flex-wrap: nowrap;
+  }
+
+  .advantages__item {
+    width: auto;
+  }
 }

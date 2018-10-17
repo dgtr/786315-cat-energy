@@ -53,3 +53,19 @@
   color: #111111;
   text-transform: uppercase;
 }
+
+@media (min-width: @tablet-width) {
+  .example {
+    background-color: transparent;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example {
+    display: flex;
+  }
+
+  .example__info {
+    width: 50%;
+  }
+}

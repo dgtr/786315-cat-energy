@@ -5,6 +5,24 @@
   padding: 0;
 
   background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: top;
+  border-top: 1px solid #e6e6e6;
+}
+
+.page-index .page-header::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+
+  width: 100%;
+  height: 300px;
+
+  background-color: #64a83b;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .page-header__logo {
@@ -29,4 +47,30 @@
   padding: 0;
   padding-right: 78px;
   padding-left: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .page-index .page-header::after {
+    width: 0;
+    height: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-index .page-header::after {
+    z-index: 1;
+
+    width: 100%;
+    height: 500px;
+
+    background-color: transparent;
+    background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient(to right, transparent 50%, #64a83b 50%);
+    background-position: right;
+    background-size: auto;
+  }
 }
