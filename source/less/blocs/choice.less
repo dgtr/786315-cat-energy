@@ -69,3 +69,30 @@
   text-transform: uppercase;
   text-decoration: none;
 }
+
+@media (min-width: @tablet-width) {
+  .choice__button {
+    width: 200px;
+    margin-top: -200px;
+    margin-bottom: 200px;
+    margin-left: 100px;
+
+    opacity: 0.99;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .choice__button {
+    margin-top: 0;
+    margin-left: 170px;
+  }
+
+  .choice__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .choice__item {
+    width: 48%;
+  }
+}

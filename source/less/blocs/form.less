@@ -37,3 +37,41 @@
   margin: 0;
   padding: 0 20px;
 }
+
+@media (min-width: @tablet-width) {
+  .form__wrapper-section {
+    flex-wrap: wrap;
+  }
+
+  .form__section-title {
+    width: 100%;
+  }
+
+  .form__additionally-option {
+    width: 50%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__container {
+    display: flex;
+    width: 100%;
+  }
+
+  .form__wrapper-section {
+    width: 100%;
+  }
+
+  .form__email {
+    width: 50%;
+  }
+
+  .form__phone {
+    width: 50%;
+  }
+}
