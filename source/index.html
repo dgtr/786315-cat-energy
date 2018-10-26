@@ -7,12 +7,41 @@
   <meta charset="utf-8">
   <title>Магазин функционального питания для котов Кэт энерджи</title>
   <link href="css/style.css" rel="stylesheet">
+  <!-- Pixel Glass -->
+  <style>
+  HTML {
+    background-repeat: no-repeat;
+    background-position:  50% 0;
+    /* По умолчанию мобильный макет */
+    background-image: url( "img/cat-energy-index-mobile.jpg" );
+  }
+  /* Планшет */
+  @media ( min-width: 768px ) {
+    HTML {
+      /* Планшетный макет */
+      background-image: url( "img/cat-energy-index-tablet.jpg" );
+    }
+  }
+  /* Десктоп */
+  @media ( min-width: 1440px ) {
+    HTML {
+      /* Десктопный макет */
+      background-image: url( "img/cat-energy-index-desktop.jpg" );
+    }
+  }
+
+  BODY {
+    opacity: .5;
+  }
+</style>
+<link rel="stylesheet" href="../pixel-glass/styles.css">
+<script src="../pixel-glass/script.js"></script>
+<!-- // Pixel Glass -->
 </head>
 <body class=page-index>
   <header class="page-header">
     <a class="page-header__logo">
-      <img class="page-header__logo-image" src="img/logo-mobile.png" alt="Логотип магазина">
-      <img class="page-header__text logo-text" src="img/logo-mobile-header.png" alt="Логотип магазина">
+      <img class="page-header__logo-image" src="img/logo-mobile.svg" width="190" alt="Логотип магазина">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -22,7 +51,7 @@
             <a class="site-list__link">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">Каталог продуции</a>
+            <a class="site-list__link site-list__link--letter-spacing" href="catalog.html">Каталог продуции</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="form.html">Подбор программы</a>

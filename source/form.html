@@ -7,6 +7,36 @@
   content="width=device-width,initial-scale=1">
   <title>Магазин функционального питания для котов Кэт энерджи</title>
   <link href="css/style.css" rel="stylesheet">
+  <!-- Pixel Glass -->
+  <style>
+  HTML {
+    background-repeat: no-repeat;
+    background-position:  50% 0;
+    /* По умолчанию мобильный макет */
+    background-image: url( "img/cat-energy-form-mobile.jpg" );
+  }
+  /* Планшет */
+  @media ( min-width: 768px ) {
+    HTML {
+      /* Планшетный макет */
+      background-image: url( "img/cat-energy-form-tablet.jpg" );
+    }
+  }
+  /* Десктоп */
+  @media ( min-width: 1440px ) {
+    HTML {
+      /* Десктопный макет */
+      background-image: url( "img/cat-energy-form-desktop.jpg" );
+    }
+  }
+
+  BODY {
+    opacity: .5;
+  }
+</style>
+<link rel="stylesheet" href="../pixel-glass/styles.css">
+<script src="../pixel-glass/script.js"></script>
+<!-- // Pixel Glass -->
 </head>
 <body>
   <header class="page-header">
