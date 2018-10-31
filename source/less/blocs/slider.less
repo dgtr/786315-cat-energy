@@ -24,9 +24,9 @@
 
 .slider__toogles {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin: 0;
-  padding: 44px 20px 35px 20px;
+  padding: 36px 0 35px 0;
 
   text-align: center;
 }
@@ -43,9 +43,28 @@
   border: none;
 }
 
+.slider__toogle--before {
+  padding: 0 8px 0 43px;
+}
+
+.slider__toogle--after {
+  padding: 0 38px 0 10px;
+}
+
 .slider__indicator-extern {
   width: 84px;
   height: 14px;
+
   border: 1px solid black;
+  border-radius: 7px;
+}
+
+.slider__indicator-intern {
+  width: 36px;
+  height: 6px;
+  margin: 3px 0 0 5px;
+
+  background-color: #68b738;
+  border: 1px solid #68b738;
   border-radius: 7px;
 }
