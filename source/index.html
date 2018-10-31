@@ -7,6 +7,36 @@
   <meta charset="utf-8">
   <title>Магазин функционального питания для котов Кэт энерджи</title>
   <link href="css/style.css" rel="stylesheet">
+  <!-- Pixel Glass -->
+  <style>
+  HTML {
+    background-repeat: no-repeat;
+    background-position:  50% 0;
+    /* По умолчанию мобильный макет */
+    background-image: url( "img/cat-energy-index-mobile.jpg" );
+  }
+  /* Планшет */
+  @media ( min-width: 768px ) {
+    HTML {
+      /* Планшетный макет */
+      background-image: url( "img/cat-energy-index-tablet.jpg" );
+    }
+  }
+  /* Десктоп */
+  @media ( min-width: 1440px ) {
+    HTML {
+      /* Десктопный макет */
+      background-image: url( "img/cat-energy-index-desktop.jpg" );
+    }
+  }
+
+  BODY {
+    opacity: .5;
+  }
+</style>
+<link rel="stylesheet" href="../pixel-glass/styles.css">
+<script src="../pixel-glass/script.js"></script>
+<!-- // Pixel Glass -->
 </head>
 <body class=page-index>
   <header class="page-header">
@@ -155,18 +185,18 @@
       </a>
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" title="Мы в ВКонтакте" href="">
-              <img src="/img/icon-vk-mobile.svg" width="22" height="12" alt="Мы в ВКонтакте">
+            <a class="social__link" title="Мы в ВКонтакте" href="">
+              <img class="social__link--vkontakte" src="/img/icon-vk.svg" width="22" height="12" alt="Мы в ВКонтакте">
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--instagram" title="Мы в Инстаграме" href="">
-              <img src="/img/icon-insta-mobile.svg" width="16" height="16" alt="Мы в Инстаграме">
+            <a class="social__link" title="Мы в Инстаграме" href="">
+              <img class="social__link--instagram" src="/img/icon-insta.svg" width="16" height="16" alt="Мы в Инстаграме">
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" title="Мы в Фэйсбуке" href="">
-              <img src="/img/icon-fb-mobile.svg" width="10" height="19" alt="Мы в Фэйсбуке">
+            <a class="social__link" title="Мы в Фэйсбуке" href="">
+              <img class="social__link--facebook" src="/img/icon-fb.svg" width="10" height="19" alt="Мы в Фэйсбуке">
             </a>
           </li>
         </ul>
