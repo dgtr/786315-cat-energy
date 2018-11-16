@@ -20,8 +20,8 @@
   font-size: 16px;
   line-height: 20px;
   font-family: "Oswald", "Verdana", sans-serif;
-  text-transform: uppercase;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .about-us__adress {
@@ -35,7 +35,7 @@
 
 .about-us__link-map {
   display: block;
-
+  position: relative;
   text-decoration: none;
 
   background-color: #f8f5f1;
@@ -44,6 +44,58 @@
 .about-us__map {
   display: block;
   margin: 0 auto;
+}
+
+.about-us__slogan--word-wrap {
+  display: inline;
+}
+
+@media (min-width: @tablet-width) {
+  .about-us__info {
+    padding-bottom: 55px;
+  }
+
+  .about-us__slogan {
+    padding-top: 33px;
+    padding-right: 77px;
+    padding-left: 71px;
+
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .about-us__adress {
+    padding-top: 31px;
+    padding-right: 72px;
+
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  .about-us__slogan--word-wrap {
+    display: inline;
+  }
+
+  .about-us__adres--word-wrap {
+    display: inline;
+  }
+
+  .about-us__map {
+
+    width: 768px;
+  }
+
+  .about-us__link-map::after {
+    content: "";
+    position: absolute;
+    top: 149px;
+    left: 322px;
+
+    width: 124px;
+    height: 106px;
+    background-image: url("/img/map-pin.png");
+  }
 }
 
 @media (min-width: @desktop-width) {

@@ -42,11 +42,24 @@
 @media (min-width: @tablet-width) {
   .main-nav__list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding-left: 94px;
   }
 
   .main-nav__toggle {
     display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav {
+    width: 720px;
+  }
+
+  .main-nav__list {
+    padding-top: 18px;
+    padding-right: 92px;
+    padding-left: 113px;
   }
 }

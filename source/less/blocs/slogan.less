@@ -8,8 +8,7 @@
 .slogan__title {
   display: block;
   margin: 0 auto;
-  padding: 0 20px;
-  padding-top: 32px;
+  padding: 32px 20px 0;
 
   font-weight: 400;
   font-size: 36px;
@@ -22,8 +21,7 @@
 .slogan__intro {
   display: block;
   margin: 0 auto;
-  padding: 0 20px;
-  padding-top: 22px;
+  padding: 22px 20px 0;
 
   font-weight: 500;
   font-size: 14px;
@@ -35,26 +33,26 @@
 }
 
 .slogan__image {
+  z-index: 2;
+
   display: block;
   margin: 0 auto;
-  padding: 0;
-  padding-top: 26px;
-  z-index: 2;
+  padding: 26px 0 0;
 }
 
 @media (min-width: @tablet-width) {
   .slogan {
+    width: 100%;
     padding: 0 30px;
 
     background-color: transparent;
     background-image: none;
     border: none;
-    width: 100%;
   }
 
   .slogan__title {
     max-width: none;
-    padding: 0 192px 0 90px;
+    padding: 31px 192px 0 88px;
 
     font-weight: 400;
     font-size: 60px;
@@ -64,13 +62,17 @@
   }
 
   .slogan__intro {
-    padding: 45px 192px 0 90px;
+    padding: 41px 192px 0 88px;
 
     font-weight: 400;
     font-size: 20px;
     line-height: 20px;
     text-align: left;
     color: #111111;
+  }
+
+  .slogan__image {
+    padding-top: 20px;
   }
 }
 
@@ -82,14 +84,28 @@
   }
 
   .slogan__title {
-    width: 30%;
-    padding: 100px 50px 35px 190px;
+    position: relative;
+
+    width: 700px;
     margin: 0;
+    padding: 84px 50px 0 190px;
   }
 
   .slogan__intro {
     order: 3;
     width: 100%;
     padding: 0 0 0 190px;
+  }
+
+  .slogan__image {
+    position: absolute;
+    top: 141px;
+    left: 560px;
+    z-index: 10;
+
+    margin: 0;
+    padding: 0;
+
+    opacity: 0.99;
   }
 }

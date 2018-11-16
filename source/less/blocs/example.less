@@ -1,5 +1,5 @@
 .example {
-  margin-top: 21px;
+  margin-top: 0;
   padding: 0;
 
   background-color: #f2f2f2;
@@ -7,7 +7,7 @@
 
 .example__title {
   margin: 0;
-  padding: 42px 20px 40px 20px;
+  padding: 59px 20px 40px 20px;
 
   font-weight: 400;
   font-size: 36px;
@@ -18,7 +18,7 @@
 
 .example__description {
   margin: 0;
-  padding: 0 21px 0 20px;
+  padding: 3px 21px 0 20px;
 }
 
 .example__list {
@@ -48,16 +48,19 @@
   color: #111111;
   text-transform: uppercase;
 
-  border: 1px solid black;
+  border: 1px solid #cdcdcd;
 }
 
 .example__name {
+  width: 121px;
+  margin: 17px 0;
+  padding: 0 20px;
+
   font-weight: 400;
   font-size: 12px;
   line-height: 12px;
-  padding: 0 17px;
+
   background-color: #f2f2f2;
-  margin: 17px 15px;
 }
 
 .example__expense {
@@ -79,6 +82,76 @@
   .example {
     background-color: transparent;
   }
+
+  .example__title {
+    padding: 63px 0 0 30px;
+
+    font-size: 60px;
+  }
+
+  .example__description {
+    padding: 85px 30px 10px 30px;
+
+    font-size: 16px;
+    line-height: 24px;
+    color: #444444;
+  }
+
+  .example__list {
+    padding-top: 41px;
+    padding-right: 30px;
+    padding-left: 29px;
+  }
+
+  .example__list-row {
+    justify-content: flex-start;
+  }
+
+  .example__data {
+    width: 162px;
+    margin-right: 40px;
+    padding: 0;
+
+    font-size: 30px;
+    line-height: 70px;
+  }
+
+  .example__wrapper {
+    display: flex;
+  }
+
+  .example__expense {
+    padding: 50px 31px 0 0;
+
+    font-size: 20px;
+    line-height: 27px;
+    text-align: right;
+  }
+
+  .example__name {
+    width: 183px;
+    margin: 0;
+    padding: 0;
+
+    font-size: 14px;
+    color: #444444;
+
+    background-color: #ffffff;
+  }
+
+  .example__name--weight-loss {
+    width: 112px;
+    margin-top: 18px;
+    margin-left: 23px;
+    padding: 0;
+  }
+
+  .example__name--weight-gain {
+    width: 143px;
+    margin-top: 18px;
+    margin-left: 77px;
+    padding: 0;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -88,5 +161,29 @@
 
   .example__info {
     width: 50%;
+  }
+
+  .example__title {
+    padding-top: 147px;
+    padding-left: 110px;
+  }
+
+  .example__description {
+    padding-top: 166px;
+    padding-left: 110px;
+    width: 573px;
+  }
+
+  .example__list {
+    padding-top: 56px;
+    padding-left: 109px;
+  }
+
+  .example__wrapper {
+    flex-wrap: wrap;
+  }
+
+  .example__expense {
+    padding-left: 112px;
   }
 }
