@@ -6,7 +6,38 @@
   <meta charset="utf-8">
   <title>Магазин функционального питания для котов Кэт энерджи</title>
   <link href="css/style.css" rel="stylesheet">
+  <!-- Pixel Glass -->
+  <style>
+    HTML {
+  background-repeat: no-repeat;
+  background-position:  50% 0;
+  /* По умолчанию мобильный макет */
+  background-image: url( "img/cat-energy-index-mobile.jpg" );
+}
+/* Планшет */
+@media ( min-width: 768px ) {
+  HTML {
+    /* Планшетный макет */
+    background-image: url( "img/cat-energy-index-tablet.jpg" );
+  }
+}
+/* Десктоп */
+@media ( min-width: 1440px ) {
+  HTML {
+    /* Десктопный макет */
+    background-image: url( "img/cat-energy-index-desktop.jpg" );
+  }
+}
+
+BODY {
+  opacity: .5;
+}
+</style>
+  <link rel="stylesheet" href="../pixel-glass/styles.css">
+  <script src="../pixel-glass/script.js"></script>
+  <!-- // Pixel Glass -->
 </head>
+
 <body class=page-index>
   <header class="page-header">
     <a class="page-header__logo-link">
@@ -99,26 +130,20 @@
           При этом он не менял своих привычек и по&#160;прежнему спит по 16 часов в день.
         </p>
         <div class="example__wrapper">
-          <table class="example__list">
-            <tr class="example__list-row">
-              <td class="example__data">
-                5 кг
-              </td>
-              <td class="example__data">
-                60 дней
-              </td>
-            </tr>
-            <tr class="example__list-row example__list-row--title">
-              <th class="example__name example__name--weight-loss">
-                снижение
-                веса
-              </th>
-              <th class="example__name example__name--weight-gain">
-                затрачено
-                времени
-              </th>
-            </tr>
-          </table>
+          <div class="example__data">
+            5 кг
+          </div>
+          <div class="example__data">
+            60 дней
+          </div>
+          <div class="example__name example__name--weight-loss">
+            снижение
+            веса
+          </div>
+          <div class="example__name example__name--weight-gain">
+            затрачено
+            времени
+          </div>
           <h3 class="example__expense">Затраты на питание: 15 000 руб.</h3>
         </div>
       </div>

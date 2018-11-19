@@ -42,9 +42,22 @@
 }
 
 .about-us__map {
+  position: relative;
   display: block;
   margin: 0 auto;
 }
+
+.about-us__link-map::after {
+  content: "";
+  position: absolute;
+  top: 141px;
+  left: 136px;
+
+  width: 55px;
+  height: 53px;
+  background-image: url("/img/map-pin-mobile.png");
+}
+
 
 .about-us__slogan--word-wrap {
   display: inline;
@@ -82,7 +95,6 @@
   }
 
   .about-us__map {
-
     width: 768px;
   }
 

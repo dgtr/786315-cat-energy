@@ -7,7 +7,8 @@
 
 .example__title {
   margin: 0;
-  padding: 59px 20px 40px 20px;
+  margin-top: 21px;
+  padding: 37px 20px 42px 20px;
 
   font-weight: 400;
   font-size: 36px;
@@ -21,24 +22,18 @@
   padding: 3px 21px 0 20px;
 }
 
-.example__list {
+.example__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   width: 100%;
   margin: 0;
-  padding: 22px 19px 0 19px;
-}
-
-.example__list-row {
-  display: flex;
-  justify-content: space-between;
-}
-
-.example__list-row--title {
-  margin-top: -26px;
+  padding: 26px 19px 0 19px;
 }
 
 .example__data {
-  width: 122px;
-  padding: 17px 10px 13px 10px;
+  width: 124px;
+  padding: 13px 10px 17px 10px;
 
   font-weight: 400;
   font-size: 24px;
@@ -49,22 +44,24 @@
   text-transform: uppercase;
 
   border: 1px solid #cdcdcd;
+  border-radius: 5%;
 }
 
 .example__name {
-  width: 121px;
-  margin: 17px 0;
-  padding: 0 20px;
+  width: 81px;
+  margin: -10px 20px 17px 20px;
 
   font-weight: 400;
   font-size: 12px;
   line-height: 12px;
+  text-align: center;
 
   background-color: #f2f2f2;
 }
 
 .example__expense {
   display: block;
+  width: 100%;
   margin: 0;
   margin-top: 2px;
   padding: 0 20px;
@@ -73,6 +70,7 @@
   font-size: 14px;
   line-height: 20px;
   font-family: "Oswald", "Verdana", sans-serif;
+  text-align: center;
   text-align: center;
   color: #111111;
   text-transform: uppercase;
@@ -97,14 +95,10 @@
     color: #444444;
   }
 
-  .example__list {
+  .example__wrapper {
     padding-top: 41px;
     padding-right: 30px;
     padding-left: 29px;
-  }
-
-  .example__list-row {
-    justify-content: flex-start;
   }
 
   .example__data {
@@ -116,16 +110,13 @@
     line-height: 70px;
   }
 
-  .example__wrapper {
-    display: flex;
-  }
-
   .example__expense {
     padding: 50px 31px 0 0;
 
     font-size: 20px;
     line-height: 27px;
     text-align: right;
+    order: 1;
   }
 
   .example__name {
@@ -169,9 +160,9 @@
   }
 
   .example__description {
+    width: 573px;
     padding-top: 166px;
     padding-left: 110px;
-    width: 573px;
   }
 
   .example__list {
