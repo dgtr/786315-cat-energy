@@ -31,7 +31,8 @@
   padding: 26px 19px 0 19px;
 }
 
-.example__data {
+.example__weight-data,
+.example__time-data {
   width: 124px;
   padding: 13px 10px 17px 10px;
 
@@ -47,7 +48,8 @@
   border-radius: 5%;
 }
 
-.example__name {
+.example__weight-title,
+.example__time-title {
   width: 81px;
   margin: -10px 20px 17px 20px;
 
@@ -82,7 +84,7 @@
   }
 
   .example__title {
-    padding: 63px 0 0 30px;
+    padding: 42px 0 0 30px;
 
     font-size: 60px;
   }
@@ -96,12 +98,20 @@
   }
 
   .example__wrapper {
-    padding-top: 41px;
+    padding-top: 43px;
     padding-right: 30px;
     padding-left: 29px;
+    justify-content: flex-start;
   }
 
-  .example__data {
+  .example__weight,
+  .example__time {
+    display: flex;
+    flex-direction: column;
+      }
+
+  .example__weight-data,
+  .example__time-data {
     width: 162px;
     margin-right: 40px;
     padding: 0;
@@ -111,37 +121,24 @@
   }
 
   .example__expense {
-    padding: 50px 31px 0 0;
-
+    padding: 7px 0 0 0;
     font-size: 20px;
     line-height: 27px;
     text-align: right;
-    order: 3;
+    width: 180px;
+    margin-left: auto;
   }
 
-  .example__name {
-    width: 183px;
+  .example__weight-title,
+  .example__time-title {
     margin: 0;
-    padding: 0;
+    margin-top: -10px;
+    padding: 0 10px;
 
     font-size: 14px;
     color: #444444;
 
     background-color: #ffffff;
-  }
-
-  .example__name--weight-loss {
-    width: 112px;
-    margin-top: 18px;
-    margin-left: 23px;
-    padding: 0;
-  }
-
-  .example__name--weight-gain {
-    width: 143px;
-    margin-top: 18px;
-    margin-left: 77px;
-    padding: 0;
   }
 }
 
