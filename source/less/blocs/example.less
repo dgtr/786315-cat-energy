@@ -31,6 +31,12 @@
   padding: 26px 19px 0 19px;
 }
 
+.example__wrapper-for-data {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
 .example__weight-data,
 .example__time-data {
   width: 124px;
@@ -98,22 +104,27 @@
   }
 
   .example__wrapper {
+    justify-content: flex-start;
     padding-top: 43px;
     padding-right: 30px;
     padding-left: 29px;
-    justify-content: flex-start;
+  }
+
+  .example__wrapper-for-data {
+    display: flex;
+    justify-content: space-between;
+    width: 365px;
   }
 
   .example__weight,
   .example__time {
     display: flex;
     flex-direction: column;
-      }
+  }
 
   .example__weight-data,
   .example__time-data {
     width: 162px;
-    margin-right: 40px;
     padding: 0;
 
     font-size: 30px;
@@ -121,17 +132,19 @@
   }
 
   .example__expense {
+    width: 180px;
+    margin-left: auto;
     padding: 7px 0 0 0;
+
     font-size: 20px;
     line-height: 27px;
     text-align: right;
-    width: 180px;
-    margin-left: auto;
   }
 
   .example__weight-title,
   .example__time-title {
-    margin: 0;
+    width: auto;
+    margin: 0 auto;
     margin-top: -10px;
     padding: 0 10px;
 
@@ -144,17 +157,25 @@
 
 @media (min-width: @desktop-width) {
   .example {
+    margin-top: 50px;
     display: flex;
   }
 
   .example__info {
     width: 50%;
+    background-image: linear-gradient(#ffffff 0px, #ffffff 212px, #f2f2f2 212px, #f2f2f2 100%);
   }
 
   .example__title {
-    padding-top: 147px;
+    padding-top: 76px;
     padding-left: 110px;
   }
+
+  .example__weight-title,
+  .example__time-title {
+    background-color: #f2f2f2;
+  }
+
 
   .example__description {
     width: 573px;
@@ -168,10 +189,27 @@
   }
 
   .example__wrapper {
+    flex-direction: column;
     flex-wrap: wrap;
   }
 
+  .example__wrapper-for-data {
+    width: 447px;
+    padding-top: 15px;
+    padding-left: 81px;
+  }
+
   .example__expense {
-    padding-left: 112px;
+    margin: 0;
+    padding: 0;
+    padding-top: 54px;
+    padding-left: 70px;
+    width: auto;
+    align-self: flex-start;
+    padding-left: 82px;
+  }
+
+  .example__expense--indent {
+    margin-left: 58px;
   }
 }
